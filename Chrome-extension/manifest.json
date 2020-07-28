@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "MEME",
+  "description": "Get a new meme on every new tab!",
+  "version": "1.0",
+  "icons": {
+    "128": "icon128.png",
+    "64": "icon64.png",
+    "32":"icon32.png",
+    "16": "icon16.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"  
+  },
+
+  "chrome_url_overrides":{
+		"newtab":"memes.html"
+	},
+
+  "content_security_policy": "script-src 'self' https://code.jquery.com/jquery-3.5.1.js; object-src 'self'"
+
+}
